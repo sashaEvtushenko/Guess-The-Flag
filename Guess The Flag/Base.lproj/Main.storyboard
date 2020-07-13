@@ -48,7 +48,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k90-jl-10g"/>
+                    <navigationItem key="navigationItem" id="k90-jl-10g">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="dJP-nF-Xph"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="button1" destination="5cB-Au-Pb3" id="aeD-6q-GHr"/>
                         <outlet property="button2" destination="ZWA-Ng-IIj" id="K8K-PK-3r8"/>
