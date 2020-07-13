@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         button1.layer.borderColor = UIColor.systemGray.cgColor
         button2.layer.borderColor = UIColor.systemGray.cgColor
         button3.layer.borderColor = UIColor.systemGray.cgColor
-        
+
         askQuestion()
     }
 
@@ -45,7 +45,8 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         title = countries[correctAnswer].uppercased()
-        navigationItem.rightBarButtonItem?.title = "Score: \(score)"
+        
+        navigationItem.rightBarButtonItem?.title = "Tap For Score"
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -71,6 +72,10 @@ class ViewController: UIViewController {
         }
 
         askQuestion()
+    }
+    
+    @IBAction func showScoreTapped(_ sender: UIBarButtonItem) {
+        navigationItem.rightBarButtonItem?.title = "Score: \(score)"
     }
 }
 

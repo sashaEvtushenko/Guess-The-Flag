@@ -49,7 +49,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="k90-jl-10g">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="dJP-nF-Xph"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="dJP-nF-Xph">
+                            <connections>
+                                <action selector="showScoreTapped:" destination="BYZ-38-t0r" id="tZw-9S-72z"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="button1" destination="5cB-Au-Pb3" id="aeD-6q-GHr"/>
